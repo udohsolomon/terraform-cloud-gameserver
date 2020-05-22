@@ -1,1 +1,1 @@
-# terraform-gameserver
+# terraform-cloud-gameserver
