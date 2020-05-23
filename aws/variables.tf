@@ -1,5 +1,5 @@
 variable "namespace" {
-    default = "terraforminaction"
+    default = "gameserver"
     type = string
 }
 
