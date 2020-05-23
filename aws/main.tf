@@ -25,7 +25,7 @@ module "vpc" {
 
 # ALB Security group
 module "alb_sg" {
-  source = "scottwinkler/sg/aws"
+  source = "udohsolomon/security-group/aws"
   vpc_id = module.vpc.vpc_id
   ingress_rules = [{
     port        = 80
@@ -34,7 +34,7 @@ module "alb_sg" {
 }
 
 module "websvr_sg" {
-  source = "scottwinkler/sg/aws"
+  source = "udohsolomon/security-group/aws"
   vpc_id = module.vpc.vpc_id
   ingress_rules = [
     {
