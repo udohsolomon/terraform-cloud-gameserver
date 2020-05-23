@@ -277,7 +277,7 @@ resource "aws_ecs_service" "ecs_service" {
   name            = "${local.namespace}-ecs-service"
   cluster         = aws_ecs_cluster.ecs_cluster.id
   task_definition = aws_ecs_task_definition.ecs_task_definition.arn
-  desired_count   = 1
+  desired_count   = 3
   launch_type     = "FARGATE"
 
   network_configuration {
